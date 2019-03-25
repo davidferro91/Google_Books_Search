@@ -42,9 +42,14 @@ module.exports = {
     const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=";
     const APIKEYSETUP = "&key=";
     const query = req.params.query;
+    let queryURL = BASEURL + query +APIKEYSETUP + keys.googleAPI.apiKey;
+    console.log(queryURL);
     axios
-      .get(BASEURL + query + APIKEYSETUP + keys.googleAPI.apiKey)
-      .then(response => res.json(response))
+      .get(queryURL)
+      .then(response => {
+        console.log(response.data.items);
+        res.json(response.data.items);
+      })
       .catch(err => res.status(422).json(err));
   }
 };

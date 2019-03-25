@@ -8,18 +8,18 @@ function Footer() {
       <Container>
         <Row>
           <Col size="l6 s12">
-            <h5 className="white-text">Footer Content</h5>
-            <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            <h5 className="white-text">Google Books Search</h5>
+            <p className="grey-text text-lighten-4">The application where you can search for Google Books and save them for your reading pleasure later.</p>
           </Col>
-          <Col size="l4 offset-l2 s12">
-            <h5 className="white-text">Links</h5>
+          <Col size="l6 s12">
+            
           </Col>
         </Row>
       </Container>
-      <div class="footer-copyright">
+      <div className="footer-copyright">
         <Container>
           © 2019 David Ferro
-          <a className="right white-text" href="">Code on Github</a>
+          <a className="right white-text" href="https://github.com/davidferro91/Google_Books_Search">Code on Github</a>
         </Container>
       </div>
     </footer>

@@ -9,9 +9,9 @@ function Nav() {
       <Container>
         <div className="nav-wrapper">
           <Link className="brand-logo" to="/">
-            Google Books
+            Google Books Search
         </Link>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <ul id="nav-mobile" className="right">
             <li>
               <Link to="/">Search</Link>
             </li>

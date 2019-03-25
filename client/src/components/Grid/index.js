@@ -9,5 +9,5 @@ export function Row({ children }) {
 }
 
 export function Col({ size, children }) {
-  return <div classname={"col" + size}>{children}</div>;
+  return <div className={"col " + size}>{children}</div>;
 }
