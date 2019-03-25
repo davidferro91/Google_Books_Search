@@ -43,11 +43,11 @@ module.exports = {
     const APIKEYSETUP = "&key=";
     const query = req.params.query;
     let queryURL = BASEURL + query +APIKEYSETUP + keys.googleAPI.apiKey;
-    console.log(queryURL);
+    // console.log(queryURL);
     axios
       .get(queryURL)
       .then(response => {
-        console.log(response.data.items);
+        // console.log(response.data.items);
         res.json(response.data.items);
       })
       .catch(err => res.status(422).json(err));

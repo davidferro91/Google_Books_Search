@@ -8,8 +8,7 @@ const googleBookSchema = new Schema({
   },
   authors: [
     {
-      type: String,
-      required: true
+      type: String
     }
   ],
   description: {

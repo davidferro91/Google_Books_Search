@@ -6,8 +6,8 @@ function SearchResults(props) {
     <div>
       {props.results.map(result => (
         <Card
-          key={result.id + result.volumeInfo.title}
-          id={result.id + result.volumeInfo.title}
+          key={result.id}
+          id={result.id}
           title={result.volumeInfo.title + (result.volumeInfo.subtitle ? (": " + result.volumeInfo.subtitle) : "")}
           authors={result.volumeInfo.authors ? result.volumeInfo.authors : ["No Author Found"]}
           description={result.volumeInfo.description}
