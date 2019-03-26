@@ -4,6 +4,7 @@ import { Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import SearchBar from "../components/SearchBar";
 import SearchResults from "../components/SearchResults";
+import Loader from "../components/Loader";
 
 class Search extends Component {
 
@@ -71,10 +72,13 @@ class Search extends Component {
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
         />
-        <SearchResults
-          handleBtnClick={this.handleBtnClick}
-          results={this.state.results}
-        />
+        {this.state.results === [] ?
+          <Loader /> :
+          <SearchResults
+            handleBtnClick={this.handleBtnClick}
+            results={this.state.results}
+          />
+        }
       </Container>
     );
   }
